@@ -1,0 +1,156 @@
+    body {
+      margin: 0;
+      font-family: 'El Messiri', sans-serif;
+      color: #f1f1f1;
+      background: linear-gradient(270deg, #0f2027, #203a43, #2c5364);
+      background-size: 600% 600%;
+      animation: gradientBG 18s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position:0% 50%}
+      50% {background-position:100% 50%}
+      100% {background-position:0% 50%}
+    }
+
+    header {
+      background: rgba(17, 17, 17, 0.9);
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 700;
+      color: #00e0ff;
+      border-bottom: 2px solid #00bcd4;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .container {
+      max-width: 950px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .section-title {
+      font-size: 24px;
+      margin: 40px 0 20px;
+      border-right: 5px solid #00bcd4;
+      padding-right: 10px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .episodes {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .episode-card {
+      background: rgba(30, 30, 30, 0.75);
+      backdrop-filter: blur(6px);
+      padding: 15px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+      text-decoration: none;
+      color: #00e0ff;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .episode-card:hover {
+      background: rgba(0, 188, 212, 0.9);
+      color: #111;
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    }
+
+    .badges {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .badges span {
+      font-size: 12px;
+      padding: 3px 7px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .new-badge {background-color: orange; color: #111;}
+    .badge-Remaster {background-color: yellow; color: black;}
+    .badge-filler {background-color: red; color: white;}
+    .badge-manga {background-color: green; color: white;}
+
+    /* 🔍 البحث وزر العشوائي */
+    .search-box {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    #searchInput {
+      padding: 12px;
+      width: 65%;
+      max-width: 400px;
+      border-radius: 8px;
+      border: 1px solid #00bcd4;
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+      font-size: 16px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    #searchInput:focus {
+      border-color: #00e0ff;
+      box-shadow: 0 0 10px #00e0ff55;
+    }
+
+    #randomBtn {
+      padding: 12px 20px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 8px;
+      background: #00bcd4;
+      color: #111;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #randomBtn:hover {
+      background: #00e0ff;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      color: #ccc;
+      font-size: 14px;
+      padding: 30px 10px;
+      background: rgba(0,0,0,0.4);
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #00e0ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .section-title {font-size: 20px;}
+      #searchInput {width: 90%;}
+    }
