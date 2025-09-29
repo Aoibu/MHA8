@@ -29,10 +29,7 @@
 </div>
 
 <!-- الأقسام كما هي -->
-<div class="container">
-  <div class="section-title">📺 الحلقات</div>
-    <a href="1.html" class="episode-card">1 -  توشينوري ياغي: الصعود الأصلي</a>
-</div>
+<div id="episodes"></div>
 
 <footer>
   &copy; 2025 Aoibu Team | جميع الحقوق محفوظة
@@ -68,5 +65,13 @@
   });
 </script>
 
+<script>
+  fetch("css/Epilist.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("episodes").innerHTML = data;
+    });
+</script>
+  
 </body>
 </html>
