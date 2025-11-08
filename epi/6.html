@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>اكاديميتي للأبطال الموسم الثامن والأخير الحلقة 6 مترجمة بالكامل الى العربية مجانًا بدون إعلانات اكاديمية بطلي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <a href="../index.html">← الصفحة الرئيسية</a>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner">
+    فريق ترجمة أويبو - Aoibu Team
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Info Section -->
+    <div class="info-section">
+      <img class="poster" src="https://k.top4top.io/p_3598cuc562.jpeg" alt="اكاديميتي للأبطال الموسم الثامن والأخير الحلقة 6 مترجمة بالكامل الى العربية مجانًا بدون إعلانات اكاديمية بطلي">
+      <div class="title">اكاديميتي للأبطال</div>
+      <div class="subtitle">الحلقة 6 - إفتحها بالقوة! ميدوريا إيزوكو!!</div>
+
+      <table class="download-table">
+        <tr>
+          <th>السيرفر</th>
+          <th>الجودة</th>
+          <th>تحميل</th>
+        </tr>
+        <tr>
+          <td>Mega</td><td>1080p</td>
+          <td><a href="https://mega.nz/file/VmcgzT7D#6uRYCNhNX5SokLvS0EGplBoqqwcXnk-gJNlP5hxEzUs" target="_blank">تحميل</a></td>
+        </tr>
+        <tr>
+          <td>Gdrive</td><td>1080p</td>
+          <td><a href="https://drive.google.com/file/d/1vO0ovgYGAM0bcG_uDv2C46b7fIDPxgnb/view?usp=drivesdk" target="_blank">تحميل</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Video Player -->
+    <div class="video-player">
+      <iframe id="videoFrame" src="https://drive.google.com/file/d/1vO0ovgYGAM0bcG_uDv2C46b7fIDPxgnb/preview" allowfullscreen></iframe>
+    </div>
+
+    <!-- Server Buttons -->
+    <div class="server-buttons">
+      <button onclick="changeServer('https://drive.google.com/file/d/1vO0ovgYGAM0bcG_uDv2C46b7fIDPxgnb/preview')">Drive Multi-quality</button>
+      <button onclick="changeServer('https://mega.nz/embed/VmcgzT7D#6uRYCNhNX5SokLvS0EGplBoqqwcXnk-gJNlP5hxEzUs')">Mega 1080p</button>
+    </div>
+
+
+    <!-- السوفتسب -->
+    <div class="section-box">
+      <h3>ملف الترجمة والخام</h3>
+      <a href="https://drive.google.com/file/d/1cxrH3rsx4akPFLSGwAwT6HRGYu2PzxD6/view?usp=drivesdk" target="_blank">🔹 تحميل الخام (MP4)</a>
+      <a href="https://subsource.net/subtitle/boku-no-hiro-akademia-season-8/arabic/10171796" target="_blank">🔤 ملف الترجمة (Subsource)</a>
+    </div>
+
+
+    <!-- تقييم -->
+    <div class="section-box" style="text-align: center;">
+      <h3>⭐ قيّم الحلقة</h3>
+      <div id="rating-stars">
+        <span onclick="rate(1)">★</span>
+        <span onclick="rate(2)">★</span>
+        <span onclick="rate(3)">★</span>
+        <span onclick="rate(4)">★</span>
+        <span onclick="rate(5)">★</span>
+      </div>
+      <p id="rating-result" style="margin-top: 10px; color: #aaa;">لم يتم التقييم بعد</p>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    جميع الحقوق محفوظة © Aoibu<br>
+    تابعونا: 
+    <a href="https://t.me/Aoibu_Arabic" target="_blank">تيليجرام</a> | 
+    <a href="https://x.com/TheConanSign" target="_blank">تويتر</a>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function changeServer(url) {
+      document.getElementById('videoFrame').src = url;
+    }
+
+    function rate(stars) {
+      const starsContainer = document.getElementById("rating-stars").children;
+      for (let i = 0; i < starsContainer.length; i++) {
+        starsContainer[i].style.color = (i < stars) ? "#ffc107" : "#444";
+      }
+      document.getElementById("rating-result").innerText = `شكراً! تم تقييم الحلقة بـ ${stars} نجوم`;
+    }
+  </script>
+
+</body>
+</html>
